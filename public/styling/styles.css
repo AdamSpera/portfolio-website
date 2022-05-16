@@ -192,9 +192,11 @@ img {
   border: 5px solid #ffffff;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
   text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
-  margin-left: 15%;
-  margin-right: 15%;
+.mobile-spacer {
+  margin-top: 2rem;
 }
