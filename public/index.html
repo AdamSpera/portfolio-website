@@ -16,13 +16,14 @@
 
 <style type="text/css">
   .mobileShow {
-    width: 75%;
+    /* MOBILE */
+    color: aqua;
   }
 
-  /* Smartphone Portrait and Landscape */
-  @media only screen and (min-device-width : 380px) {
+  @media only screen and (min-device-width : 400px) {
     .mobileShow {
-      width: 30rem;
+      /* DESKTOP */
+      color: yellow;
     }
   }
 </style>
@@ -31,7 +32,8 @@
 
   <div class="title">
     <div class="subtitle">
-      <img src="images\name.png" alt="Signature" class="mobileShow">
+      <p class="mobileShow">Hello World!</p>
+      <!-- <img src="images\name.png" alt="Signature" class="mobileShow"> -->
     </div>
     <div class="button-title">
       <button class="button" onclick="window.open('documents/Adam_T_Spera_Resume.pdf')">R E S U M E</button>
