@@ -14,13 +14,27 @@
   <link type="text/css" href="styling/styles.css" rel="stylesheet">
 </head>
 
+<style type="text/css">
+  .mobileShow {
+    display: none;
+  }
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen and (min-device-width : 320px) {
+    .mobileShow {
+      color: rgb(0, 136, 255);
+    }
+  }
+</style>
+
 <body>
 
   <div class="title">
     <div class="subtitle">
       <!-- <p>Adam Spera</p>
       <p>Web Developer</p> -->
-      <img src="images\name.png" alt="Signature" style="width: 30%;" class="phone-image">
+      <p class="mobileShow">hello</p>
+      <!-- <img src="images\name.png" alt="Signature" style="width: 30%;" class="mobileShow"> -->
       <!-- <button class="button" onclick="window.open('documents/Adam_T_Spera_Resume.pdf')">R E S U M E</button> -->
     </div>
     <div class="button-title">
@@ -141,9 +155,11 @@
         </div>
         <div class="work-description">
           <ul>
-            <li><i>Network Documentation:</i> Fully documented 50+ MDFs, IDFs, and Cores across campus using Confluence</li>
+            <li><i>Network Documentation:</i> Fully documented 50+ MDFs, IDFs, and Cores across campus using Confluence
+            </li>
             <li><i>Infrastructure Upgrades:</i> Installed and configured 80+ Cisco Meraki Switches network wide</li>
-            <li><i>Information Organization:</i> Implemented new framework for network documentation and port routing</li>
+            <li><i>Information Organization:</i> Implemented new framework for network documentation and port routing
+            </li>
           </ul>
         </div>
       </div>
@@ -157,10 +173,14 @@
         </div>
         <div class="work-description">
           <ul>
-            <li><i>Prototype Development:</i> Developed full stack web app prototype for first and second round investment rounds</li>
-            <li><i>Algorithm Design:</i> Designed algorithmic framework for a self learning database focused on scalability</li>
-            <li><i>Back Office:</i> Installed back office systems, ex. Microsoft365, Sentinel Systems, and Cisco Enterprise systems</li>
-            <li><i>Management:</i> Advised hiring process for over 350 candidates and conducted technical interviews</li>
+            <li><i>Prototype Development:</i> Developed full stack web app prototype for first and second round
+              investment rounds</li>
+            <li><i>Algorithm Design:</i> Designed algorithmic framework for a self learning database focused on
+              scalability</li>
+            <li><i>Back Office:</i> Installed back office systems, ex. Microsoft365, Sentinel Systems, and Cisco
+              Enterprise systems</li>
+            <li><i>Management:</i> Advised hiring process for over 350 candidates and conducted technical interviews
+            </li>
           </ul>
         </div>
       </div>
@@ -174,9 +194,11 @@
         </div>
         <div class="work-description">
           <ul>
-            <li><i>Help Desk Support:</i> Assisted in help desk department to help with capstone projects' technical issues</li>
+            <li><i>Help Desk Support:</i> Assisted in help desk department to help with capstone projects' technical
+              issues</li>
             <li><i>Storage Organization:</i> Routed and organized all networking supplies across all facilities</li>
-            <li><i>Impact:</i> Multiple security vulnerabilities identified through social engineering and cyber, fully patched</li>
+            <li><i>Impact:</i> Multiple security vulnerabilities identified through social engineering and cyber, fully
+              patched</li>
           </ul>
         </div>
       </div>
@@ -184,7 +206,8 @@
     </div>
 
     <div class="contact">
-      <br><p>Adam T Spera</p>
+      <br>
+      <p>Adam T Spera</p>
       <button class="button cbutton contb" onclick="alert('Email: adamspera@hotmail.com');">Email</button>
       <button class="button cbutton contb" onclick=" window.open('https://github.com/AdamSpera')">GitHub</button>
       <button class="button cbutton contb" onclick="window.open('documents/Adam_T_Spera_Resume.pdf')">Resume</button>
