@@ -11,8 +11,13 @@ body {
 
 .subtitle {
   text-align: center;
-  padding-top: 40vh;
+  padding-top: 30vh;
   color: #ffffff;
+}
+
+.button-title {
+  padding-top: 4vh;
+  text-align: center;
 }
 
 .button {
