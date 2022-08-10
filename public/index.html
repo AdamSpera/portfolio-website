@@ -27,614 +27,666 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link type="text/css" href="styling/styles.css" rel="stylesheet">
+
+  <style type="text/css">
+    /* MOBILE */
+
+    .mobile-mode {
+      display: block;
+    }
+
+    .desktop-mode {
+      display: none;
+    }
+
+    @media only screen and (min-device-width : 950px) {
+      /* DESKTOP */
+
+      .mobile-mode {
+        display: none;
+      }
+
+      .desktop-mode {
+        display: block;
+      }
+
+    }
+  </style>
+
 </head>
 
-<body class="desktop-mode">
+<body>
 
-  <!-- Header Bar -->
-  <div class="header" id="header">
-    <div class="row" style="padding: 0; margin: 0;">
-      <div class="col-4" style="text-align: left; padding-top: 5px;">
-        <table>
-          <tr>
-            <th>
-              <span class="material-symbols-outlined" style="padding-right: 6px;">dashboard</span>
-            </th>
-            <th>
-              <h1>Dashboard</h1>
-            </th>
-          </tr>
-        </table>
-      </div>
-      <div class="col-8" style="text-align: right; padding-top: 5px;">
-        <div class="iconRow iconRow">
-          <span class="searchBar">
-            <img src="./images/download.png" alt="Download Bar Alt" style="height: 35px; padding-right: 25px; margin-top: -15px; cursor: pointer;" onclick="window.open('documents/Adam_T_Spera_Resume.pdf')">
-          </span>
-          <span class="material-symbols-outlined icon">person</span>
-          <span class="material-symbols-outlined icon">help</span>
-          <span class="material-symbols-outlined icon" style="padding-left: 5px;">notifications</span>
-        </div>
-      </div>
+  <div class="mobile-mode mobile-body">
+    <div class="mobile-textBlob">
+      <h1 style="color: white;">Adam Spera</h1>
+      <p style="color: whitesmoke;">Career Dashboard</p>
+
+      <p style="color: whitesmoke; width: 100%; margin-top: 15px; font-weight: 900; font-size: 18px;">For full experience, visit on desktop!</p>
+
+      <table style="text-align: center; width: 100%; margin-top: 20px;">
+        <tr>
+          <th style="width: 50%; text-align: right; padding-right: 25px;">
+            <span class="material-symbols-outlined" style="cursor: pointer; color: whitesmoke;" onclick="window.open('documents/Adam_T_Spera_Resume.pdf')">description</span>
+          </th>
+          <th style="width: 50%; text-align: left; padding-left: 25px;">
+            <span class="material-symbols-outlined" style="cursor: pointer; color: whitesmoke;" id="email2">mail</span>
+          </th>
+        </tr>
+      </table>
     </div>
   </div>
 
-  <div class="row" style="padding: 0; margin: 0;">
+  <div class="desktop-mode">
 
-    <!-- Left Bar -->
-    <div class="col-2 leftBar" style="padding-left: 20px;">
-
-      <!-- Intro Header -->
-      <h1 style="padding-top: 50px; margin-bottom: 0;">Adam Spera</h1>
-      <p style="font-size: 13px;">Student, Tutor, Counselor</p>
-      <br>
-      <p style="font-size: 17px; color: #20ab4e;">Networking Professional</p>
-      <p style="color: #53a828">MTA&nbsp;&nbsp;NSE1</p>
-
-      <!-- Work Experience -->
-      <br style="margin-bottom: 10px;">
-
-      <!-- Network Admin -->
-      <div class="textBlob">
-        <h5 style="margin-bottom: 1px;">Network Administrator</h5>
-        <p>Internship&nbsp; @ &nbsp;Arcadia University</p>
-        <ul>
-          <li>
-            <p>Fully documented 50+ MDFs, IDFs, and Cores across campus using Confluence</p>
-          </li>
-          <li>
-            <p>Installed and configured 90+ Cisco Meraki Switches network wide</p>
-          </li>
-          <li>
-            <p>Identified and mapped all 800+ Aruba access points across multiple campus'</p>
-          </li>
-          <li>
-            <p>Analyzed 1500+ wired ports across campus utilizing Fluke technology's and systems</p>
-          </li>
-        </ul>
-        <p style="text-align: left; ">Since December 2021</p>
-      </div>
-
-      <!-- CodeNinjas -->
-      <div class="textBlob">
-        <h5 style="margin-bottom: 1px;">IT Coordinator</h5>
-        <p>Volunteer&nbsp; @ &nbsp;CodeNinjas Horsham</p>
-        <ul>
-          <li>
-            <p>Maintain stability and reliability across network to ensure an uninterrupted experience for students</p>
-          </li>
-          <li>
-            <p>Mentor and teach 30+ 5-14yo students Java and Python fundamentals in intuitive and fun ways</p>
-          </li>
-          <li>
-            <p>Implement and incorporate new technologies into teh dojo ecosystem</p>
-          </li>
-          <li>
-            <p>Install and configure multiple redundant network features</p>
-          </li>
-        </ul>
-        <p style="text-align: left;">Since June 2022</p>
-      </div>
-
-      <div class="textBlob" style="text-align: center;">
-        <p style="font-size: large;">Find more on <a href="https://www.linkedin.com/in/adamtspera/">LinkedIn</a></p>
-      </div>
-
-    </div>
-
-    <!-- Right Bar -->
-    <div class="col-10 rightBar"
-      style="padding-left: 21px; text-align: left; word-wrap: break-word; word-break: break-all; white-space:nowrap">
-
-      <h1 style="margin-top: 50px;">Installed and Documented</h1>
-
-      <!-- Switches and Wireless -->
-      <div class="container" style="margin: 0; padding-left: 12px; padding-top: 7px;">
-        <div class="row">
-          <div class="col-3" style="padding: 0;">
-
-            <p>SWITCHES</p>
-
-            <span style="display: inline;">
-              <table>
-                <th>
-                  <img src="./images/switch.svg" alt="Switch Icon" style="height: 50px; padding: 0; margin: 0;">
-                </th>
-                <th>
-                  <h2 style="font-size: 40px; padding-top: 6px;">264 </h2>
-                </th>
-                <th>
-                  <h2 style="font-size: 17px; font-weight: 1000; padding-top: 25px;">&nbsp;/ 264 switches</h2>
-                </th>
-              </table>
-            </span>
-
-          </div>
-          <div class="col-3">
-
-            <p>WIRELESS</p>
-
-            <span style="display: inline;">
-              <table>
-                <th>
-                  <img src="./images/wireless.svg" alt="Wireless Icon" style="height: 50px; padding: 0; margin: 0;">
-                </th>
-                <th>
-                  <h2 style="font-size: 40px; padding-top: 6px;">802 </h2>
-                </th>
-                <th>
-                  <h2 style="font-size: 17px; font-weight: 1000; padding-top: 25px;">&nbsp;/ 802 waps</h2>
-                </th>
-              </table>
-            </span>
-
-          </div>
-
-          <div class="col-3">
-
-            <p>BATTERIES</p>
-
-            <span style="display: inline;">
-              <table>
-                <th>
-                  <img src="./images/battery.png" alt="Wireless Icon" style="height: 50px; padding: 0; margin: 0;">
-                </th>
-                <th>
-                  <h2 style="font-size: 40px; padding-top: 6px;">54 </h2>
-                </th>
-                <th>
-                  <h2 style="font-size: 17px; font-weight: 1000; padding-top: 25px;">&nbsp;/ 54 apcs</h2>
-                </th>
-              </table>
-            </span>
-
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Graph Area -->
-      <table style="width: 80%;">
-        <th>
-          <h1 style="margin-top: 15px;">Git Statistics</h1>
-        </th>
-        <th>
-          <table style="margin-top: 10px;">
-            <th>
-              <p>all</p>
-            </th>
-            <th>
-              <span class="material-symbols-outlined" style="padding-top: 5px;">arrow_drop_down</span>
-            </th>
-          </table>
-        </th>
-        <th>
-          <table style="margin-top: 10px;">
-            <th>
-              <p>for the last day</p>
-            </th>
-            <th>
-              <span class="material-symbols-outlined" style="padding-top: 5px;">arrow_drop_down</span>
-            </th>
-          </table>
-        </th>
-        <th style="width: 40%;">
-
-        </th>
-        <th style="text-align: right; margin-top: 100px;">
-          <p>17.76 TB ( ↓ 7.09 TB, ↑ 10.67 TB) &nbsp;</p>
-        </th>
-        <th>
-
-        </th>
-      </table>
-
-      <!-- GitHub Chart Row -->
-      <table style="width: 100%;">
-        <th style="width: 80%;">
-          <img src="https://ghchart.rshah.org/andybalaam" alt="My Github chart"
-            style="width: 100%; margin-top: 8px; margin-left: 5px; float: left;" />
-        </th>
-        <th>
-          <div class="pieChart">
-            <p style="margin-bottom: 5px;">42% &nbsp;&nbsp;-&nbsp;&nbsp; JavaScript</p>
-            <p style="margin-bottom: 5px;">24% &nbsp;&nbsp;-&nbsp;&nbsp; HTML / CSS</p>
-            <p style="margin-bottom: 5px;">19% &nbsp;&nbsp;-&nbsp;&nbsp; SwiftUI</p>
-            <p>15% &nbsp;&nbsp;-&nbsp;&nbsp; Java</p>
-          </div>
-        </th>
-      </table>
-
-      <!-- Above Client List -->
-      <table style="width: 100%;">
-        <th>
-          <h1 style="margin-top: 15px; margin-bottom: 10px; float: left;">Accomplishments</h1>
-        </th>
-        <th style="text-align: right; padding-top: 15px; padding-right: 35px;">
-          <p><a href="https://www.linkedin.com/in/adamtspera/">See all data</a></p>
-        </th>
-      </table>
-
-      <!-- Client List -->
-      <table class="clientChart">
-
-        <!-- Header Row -->
-        <tr>
-          <th class="checkBox">
-            <input type="checkbox">
-          </th>
-          <th>
-            <p>Status</p>
-          </th>
-          <th>
-            <p>Description</p>
-          </th>
-          <th>
-            <p>First seen</p>
-          </th>
-          <th>
-            <table>
+    <!-- Header Bar -->
+    <div class="header" id="header">
+      <div class="row" style="padding: 0; margin: 0;">
+        <div class="col-4" style="text-align: left; padding-top: 5px;">
+          <table>
+            <tr>
               <th>
-                <p>Usage</p>
+                <span class="material-symbols-outlined" style="padding-right: 6px;">dashboard</span>
               </th>
               <th>
-                <span class="material-symbols-outlined" style="padding-top: 5px;">arrow_drop_down</span>
+                <h1>Dashboard</h1>
+              </th>
+            </tr>
+          </table>
+        </div>
+        <div class="col-8" style="text-align: right; padding-top: 5px;">
+          <div class="iconRow iconRow">
+            <span class="searchBar">
+              <img src="./images/download.png" alt="Download Bar Alt"
+                style="height: 35px; padding-right: 25px; margin-top: -15px; cursor: pointer;"
+                onclick="window.open('documents/Adam_T_Spera_Resume.pdf')">
+            </span>
+            <span class="material-symbols-outlined icon" id="profile">person</span>
+            <span class="material-symbols-outlined icon" id="email">mail</span>
+            <span class="material-symbols-outlined icon" style="padding-left: 5px;" id="share">share</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="padding: 0; margin: 0;">
+
+      <!-- Left Bar -->
+      <div class="col-2 leftBar" style="padding-left: 20px;">
+
+        <!-- Intro Header -->
+        <h1 style="padding-top: 50px; margin-bottom: 0;">Adam Spera</h1>
+        <p style="font-size: 13px;">Student, Tutor, Counselor</p>
+        <br>
+        <p style="font-size: 17px; color: #20ab4e;">Networking Professional</p>
+        <p style="color: #53a828">MTA&nbsp;&nbsp;NSE1</p>
+
+        <!-- Work Experience -->
+        <br style="margin-bottom: 10px;">
+
+        <!-- Network Admin -->
+        <div class="textBlob">
+          <h5 style="margin-bottom: 1px;">Network Administrator</h5>
+          <p>Internship&nbsp; @ &nbsp;Arcadia University</p>
+          <ul>
+            <li>
+              <p>Fully documented 50+ MDFs, IDFs, and Cores across campus using Confluence</p>
+            </li>
+            <li>
+              <p>Installed and configured 90+ Cisco Meraki Switches network wide</p>
+            </li>
+            <li>
+              <p>Identified and mapped all 800+ Aruba access points across multiple campus'</p>
+            </li>
+            <li>
+              <p>Analyzed 1500+ wired ports across campus utilizing Fluke technology's and systems</p>
+            </li>
+          </ul>
+          <p style="text-align: left; ">Since December 2021</p>
+        </div>
+
+        <!-- CodeNinjas -->
+        <div class="textBlob">
+          <h5 style="margin-bottom: 1px;">IT Coordinator</h5>
+          <p>Volunteer&nbsp; @ &nbsp;CodeNinjas Horsham</p>
+          <ul>
+            <li>
+              <p>Maintain stability and reliability across network to ensure an uninterrupted experience for students
+              </p>
+            </li>
+            <li>
+              <p>Mentor and teach 30+ 5-14yo students Java and Python fundamentals in intuitive and fun ways</p>
+            </li>
+            <li>
+              <p>Implement and incorporate new technologies into teh dojo ecosystem</p>
+            </li>
+            <li>
+              <p>Install and configure multiple redundant network features</p>
+            </li>
+          </ul>
+          <p style="text-align: left;">Since June 2022</p>
+        </div>
+
+        <div class="textBlob" style="text-align: center;">
+          <p style="font-size: large;">Find more on <a href="https://www.linkedin.com/in/adamtspera/">LinkedIn</a></p>
+        </div>
+
+      </div>
+
+      <!-- Right Bar -->
+      <div class="col-10 rightBar"
+        style="padding-left: 21px; text-align: left; word-wrap: break-word; word-break: break-all; white-space:nowrap">
+
+        <h1 style="margin-top: 50px;">Installed and Documented</h1>
+
+        <!-- Switches and Wireless -->
+        <div class="container" style="margin: 0; padding-left: 12px; padding-top: 7px;">
+          <div class="row">
+            <div class="col-3" style="padding: 0;">
+
+              <p>SWITCHES</p>
+
+              <span style="display: inline;">
+                <table>
+                  <th>
+                    <img src="./images/switch.svg" alt="Switch Icon" style="height: 50px; padding: 0; margin: 0;">
+                  </th>
+                  <th>
+                    <h2 style="font-size: 40px; padding-top: 6px;">264 </h2>
+                  </th>
+                  <th>
+                    <h2 style="font-size: 17px; font-weight: 1000; padding-top: 25px;">&nbsp;/ 264 switches</h2>
+                  </th>
+                </table>
+              </span>
+
+            </div>
+            <div class="col-3">
+
+              <p>WIRELESS</p>
+
+              <span style="display: inline;">
+                <table>
+                  <th>
+                    <img src="./images/wireless.svg" alt="Wireless Icon" style="height: 50px; padding: 0; margin: 0;">
+                  </th>
+                  <th>
+                    <h2 style="font-size: 40px; padding-top: 6px;">802 </h2>
+                  </th>
+                  <th>
+                    <h2 style="font-size: 17px; font-weight: 1000; padding-top: 25px;">&nbsp;/ 802 waps</h2>
+                  </th>
+                </table>
+              </span>
+
+            </div>
+
+            <div class="col-3">
+
+              <p>BATTERIES</p>
+
+              <span style="display: inline;">
+                <table>
+                  <th>
+                    <img src="./images/battery.png" alt="Wireless Icon" style="height: 50px; padding: 0; margin: 0;">
+                  </th>
+                  <th>
+                    <h2 style="font-size: 40px; padding-top: 6px;">54 </h2>
+                  </th>
+                  <th>
+                    <h2 style="font-size: 17px; font-weight: 1000; padding-top: 25px;">&nbsp;/ 54 apcs</h2>
+                  </th>
+                </table>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Graph Area -->
+        <table style="width: 80%;">
+          <th>
+            <h1 style="margin-top: 15px;">Git Statistics</h1>
+          </th>
+          <th>
+            <table style="margin-top: 10px;">
+              <th>
+                <p>all</p>
+              </th>
+              <th>
+                <span class="material-symbols-outlined" style="padding-top: 5px; cursor:default;">arrow_drop_down</span>
               </th>
             </table>
           </th>
           <th>
-            <p>Primary OS</p>
+            <table style="margin-top: 10px;">
+              <th>
+                <p>for the last year</p>
+              </th>
+              <th>
+                <span class="material-symbols-outlined" style="padding-top: 5px; cursor:default;">arrow_drop_down</span>
+              </th>
+            </table>
+          </th>
+          <th style="width: 40%;">
+
+          </th>
+          <th style="text-align: right; margin-top: 100px;">
+            <p>17.76 TB ( ↓ 7.09 TB, ↑ 10.67 TB) &nbsp;</p>
           </th>
           <th>
-            <p>IPv4 address</p>
+
+          </th>
+        </table>
+
+        <!-- GitHub Chart Row -->
+        <table style="width: 100%;">
+          <th style="width: 80%;">
+            <img src="https://ghchart.rshah.org/andybalaam" alt="My Github chart"
+              style="width: 100%; margin-top: 8px; margin-left: 5px; float: left;" />
           </th>
           <th>
-            <p>Connected To</p>
+            <div class="pieChart">
+              <p style="margin-bottom: 5px;">42% &nbsp;&nbsp;-&nbsp;&nbsp; JavaScript</p>
+              <p style="margin-bottom: 5px;">24% &nbsp;&nbsp;-&nbsp;&nbsp; HTML / CSS</p>
+              <p style="margin-bottom: 5px;">19% &nbsp;&nbsp;-&nbsp;&nbsp; SwiftUI</p>
+              <p>15% &nbsp;&nbsp;-&nbsp;&nbsp; Java</p>
+            </div>
           </th>
-        </tr>
+        </table>
 
-        <!-- LaundryLott -->
-        <tr>
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://laundrylott.com/">LaundryLott Web App</a></p>
-          </td>
-          <td>
-            <p>Oct&nbsp; 9,&nbsp; 2021</p>
-          </td>
-          <td>
-            <p>150 &nbsp;per/D</p>
-          </td>
-          <td>
-            <p>NodeJS</p>
-          </td>
-          <td>
-            <p><a href="https://laundrylott.com/">150.136.105.252</a></p>
-          </td>
-          <td>
-            <p>Oracle Cloud VM</p>
-          </td>
-        </tr>
+        <!-- Above Client List -->
+        <table style="width: 100%;">
+          <th>
+            <h1 style="margin-top: 15px; margin-bottom: 10px; float: left;">Accomplishments</h1>
+          </th>
+          <th style="text-align: right; padding-top: 15px; padding-right: 35px;">
+            <p><a href="https://www.linkedin.com/in/adamtspera/">See all data</a></p>
+          </th>
+        </table>
 
-        <!-- Safe Links -->
-        <tr class="everyOther">
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://github.com/AdamSpera">SafeLinks Chrome Extention</a></p>
-          </td>
-          <td>
-            <p>Apr&nbsp; 21,&nbsp; 2022</p>
-          </td>
-          <td>
-            <p>20 &nbsp;total/U</p>
-          </td>
-          <td>
-            <p>JavaScript</p>
-          </td>
-          <td>
-            <p><a href="https://github.com/AdamSpera">172.25.60.113</a></p>
-          </td>
-          <td>
-            <p>Chrome Service Worker</p>
-          </td>
-        </tr>
+        <!-- Client List -->
+        <table class="clientChart">
 
-        <!-- Ocean of Plastic -->
-        <tr>
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://twitter.com/OceanOfPlasticB">OceanOfPlastic Twitter Bot</a></p>
-          </td>
-          <td>
-            <p>Jan&nbsp; 2,&nbsp; 2022</p>
-          </td>
-          <td>
-            <p>212 &nbsp;total/T</p>
-          </td>
-          <td>
-            <p>NodeJS</p>
-          </td>
-          <td>
-            <p><a href="https://twitter.com/OceanOfPlasticB">172.25.10.70</a></p>
-          </td>
-          <td>
-            <p>Oracle Cloud VM</p>
-          </td>
-        </tr>
+          <!-- Header Row -->
+          <tr>
+            <th class="checkBox">
+              <input type="checkbox">
+            </th>
+            <th>
+              <p>Status</p>
+            </th>
+            <th>
+              <p>Description</p>
+            </th>
+            <th>
+              <p>First seen</p>
+            </th>
+            <th>
+              <table>
+                <th>
+                  <p>Usage / Exp</p>
+                </th>
+                <th>
+                  <!-- <span class="material-symbols-outlined" style="padding-top: 5px; cursor:default;">arrow_drop_down</span> -->
+                </th>
+              </table>
+            </th>
+            <th>
+              <p>Primary OS</p>
+            </th>
+            <th>
+              <p>IPv4 address</p>
+            </th>
+            <th>
+              <p>Connected To</p>
+            </th>
+          </tr>
 
-        <!-- Auto Fetch -->
-        <tr class="everyOther">
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-off.svg" alt="Port Off" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://github.com/AdamSpera">Auto Fetch VSCode Extention</a></p>
-          </td>
-          <td>
-            <p>April&nbsp; 23,&nbsp; 2022</p>
-          </td>
-          <td>
-            <p>N/A &nbsp;total/U</p>
-          </td>
-          <td>
-            <p>JavaScript</p>
-          </td>
-          <td>
-            <p><a href="https://github.com/AdamSpera">192.168.1.5</a></p>
-          </td>
-          <td>
-            <p>Visual Studio Code</p>
-          </td>
-        </tr>
+          <!-- LaundryLott -->
+          <tr>
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://laundrylott.com/">LaundryLott Web App</a></p>
+            </td>
+            <td>
+              <p>Oct&nbsp; 9,&nbsp; 2021</p>
+            </td>
+            <td>
+              <p>150 &nbsp;per/D</p>
+            </td>
+            <td>
+              <p>NodeJS</p>
+            </td>
+            <td>
+              <p><a href="https://laundrylott.com/">150.136.105.252</a></p>
+            </td>
+            <td>
+              <p>Oracle Cloud VM</p>
+            </td>
+          </tr>
 
-        <!-- Logwrite NPM -->
-        <tr>
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://github.com/AdamSpera">Logwrite NPM Package</a></p>
-          </td>
-          <td>
-            <p>Dec&nbsp; 17,&nbsp; 2021</p>
-          </td>
-          <td>
-            <p>5 &nbsp;total/D</p>
-          </td>
-          <td>
-            <p>JavaScript</p>
-          </td>
-          <td>
-            <p><a href="https://github.com/AdamSpera">10.14.82.74</a></p>
-          </td>
-          <td>
-            <p>Node Package Manager</p>
-          </td>
-        </tr>
+          <!-- Safe Links -->
+          <tr class="everyOther">
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://github.com/AdamSpera">SafeLinks Chrome Extention</a></p>
+            </td>
+            <td>
+              <p>Apr&nbsp; 21,&nbsp; 2022</p>
+            </td>
+            <td>
+              <p>20 &nbsp;total/U</p>
+            </td>
+            <td>
+              <p>JavaScript</p>
+            </td>
+            <td>
+              <p><a href="https://github.com/AdamSpera">172.25.60.113</a></p>
+            </td>
+            <td>
+              <p>Chrome Service Worker</p>
+            </td>
+          </tr>
 
-        <!-- Express-Deddion NPM -->
-        <tr class="everyOther">
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://github.com/AdamSpera">Express Deddion NPM Package</a></p>
-          </td>
-          <td>
-            <p>Feb&nbsp; 19,&nbsp; 2022</p>
-          </td>
-          <td>
-            <p>6 &nbsp;total/D</p>
-          </td>
-          <td>
-            <p>JavaScript</p>
-          </td>
-          <td>
-            <p><a href="https://github.com/AdamSpera">172.25.142.99</a></p>
-          </td>
-          <td>
-            <p>Node Package Manager</p>
-          </td>
-        </tr>
+          <!-- Ocean of Plastic -->
+          <tr>
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://twitter.com/OceanOfPlasticB">OceanOfPlastic Twitter Bot</a></p>
+            </td>
+            <td>
+              <p>Jan&nbsp; 2,&nbsp; 2022</p>
+            </td>
+            <td>
+              <p>212 &nbsp;total/T</p>
+            </td>
+            <td>
+              <p>NodeJS</p>
+            </td>
+            <td>
+              <p><a href="https://twitter.com/OceanOfPlasticB">172.25.10.70</a></p>
+            </td>
+            <td>
+              <p>Oracle Cloud VM</p>
+            </td>
+          </tr>
 
-        <!-- Google Certification -->
-        <tr>
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-off.svg" alt="Port Inactive" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">Google Analytics Individual Qualification</a></p>
-          </td>
-          <td>
-            <p>May&nbsp; 28,&nbsp; 2021</p>
-          </td>
-          <td>
-            <p>May&nbsp; 2024</p>
-          </td>
-          <td>
-            <p>Certification</p>
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">192.168.3.1</a></p>
-          </td>
-          <td>
-            <p>Google Skillshop</p>
-          </td>
-        </tr>
+          <!-- Auto Fetch -->
+          <tr class="everyOther">
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-off.svg" alt="Port Off" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://github.com/AdamSpera">Auto Fetch VSCode Extention</a></p>
+            </td>
+            <td>
+              <p>April&nbsp; 23,&nbsp; 2022</p>
+            </td>
+            <td>
+              <p>N/A &nbsp;total/U</p>
+            </td>
+            <td>
+              <p>JavaScript</p>
+            </td>
+            <td>
+              <p><a href="https://github.com/AdamSpera">192.168.1.5</a></p>
+            </td>
+            <td>
+              <p>Visual Studio Code</p>
+            </td>
+          </tr>
 
-        <!-- MTA Certification -->
-        <tr class="everyOther">
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-off.svg" alt="Port Inactive" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">Microsoft Technology Associate: Java</a></p>
-          </td>
-          <td>
-            <p>May&nbsp; 18,&nbsp; 2017</p>
-          </td>
-          <td>
-            <p>June&nbsp; 2021</p>
-          </td>
-          <td>
-            <p>Certification</p>
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">192.168.3.2</a></p>
-          </td>
-          <td>
-            <p>Microsoft</p>
-          </td>
-        </tr>
+          <!-- Logwrite NPM -->
+          <tr>
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://github.com/AdamSpera">Logwrite NPM Package</a></p>
+            </td>
+            <td>
+              <p>Dec&nbsp; 17,&nbsp; 2021</p>
+            </td>
+            <td>
+              <p>5 &nbsp;total/D</p>
+            </td>
+            <td>
+              <p>JavaScript</p>
+            </td>
+            <td>
+              <p><a href="https://github.com/AdamSpera">10.14.82.74</a></p>
+            </td>
+            <td>
+              <p>Node Package Manager</p>
+            </td>
+          </tr>
 
-        <!-- NSE Certification -->
-        <tr>
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-on.svg" alt="Port Inactive" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">NSE 1 Network Security Associate</a></p>
-          </td>
-          <td>
-            <p>Feb&nbsp; 19,&nbsp; 2022</p>
-          </td>
-          <td>
-            <p>Aug&nbsp; 2024</p>
-          </td>
-          <td>
-            <p>Certification</p>
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">192.168.3.3</a></p>
-          </td>
-          <td>
-            <p>Fortinet FTNT</p>
-          </td>
-        </tr>
+          <!-- Express-Deddion NPM -->
+          <tr class="everyOther">
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://github.com/AdamSpera">Express Deddion NPM Package</a></p>
+            </td>
+            <td>
+              <p>Feb&nbsp; 19,&nbsp; 2022</p>
+            </td>
+            <td>
+              <p>6 &nbsp;total/D</p>
+            </td>
+            <td>
+              <p>JavaScript</p>
+            </td>
+            <td>
+              <p><a href="https://github.com/AdamSpera">172.25.142.99</a></p>
+            </td>
+            <td>
+              <p>Node Package Manager</p>
+            </td>
+          </tr>
 
-        <!-- ITC Grant -->
-        <tr class="everyOther">
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">ITC 5K Research Grant</a></p>
-          </td>
-          <td>
-            <p>June&nbsp; 12,&nbsp; 2022</p>
-          </td>
-          <td>
-            <p>Granted</p>
-          </td>
-          <td>
-            <p>Research</p>
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">172.17.15.1</a></p>
-          </td>
-          <td>
-            <p>Arcadia University</p>
-          </td>
-        </tr>
+          <!-- Google Certification -->
+          <tr>
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-off.svg" alt="Port Inactive" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">Google Analytics Individual Qualification</a></p>
+            </td>
+            <td>
+              <p>May&nbsp; 28,&nbsp; 2021</p>
+            </td>
+            <td>
+              <p>May&nbsp; 2024</p>
+            </td>
+            <td>
+              <p>Certification</p>
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">192.168.3.1</a></p>
+            </td>
+            <td>
+              <p>Google Skillshop</p>
+            </td>
+          </tr>
 
-        <!-- FRC Award -->
-        <tr>
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">FRC Chairmans Award</a></p>
-          </td>
-          <td>
-            <p>March&nbsp; 27,&nbsp; 2021</p>
-          </td>
-          <td>
-            <p>Granted</p>
-          </td>
-          <td>
-            <p>Robotics</p>
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">172.17.15.2</a></p>
-          </td>
-          <td>
-            <p>First Robotics Competition</p>
-          </td>
-        </tr>
+          <!-- MTA Certification -->
+          <tr class="everyOther">
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-off.svg" alt="Port Inactive" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">Microsoft Technology Associate: Java</a></p>
+            </td>
+            <td>
+              <p>May&nbsp; 18,&nbsp; 2017</p>
+            </td>
+            <td>
+              <p>June&nbsp; 2021</p>
+            </td>
+            <td>
+              <p>Certification</p>
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">192.168.3.2</a></p>
+            </td>
+            <td>
+              <p>Microsoft</p>
+            </td>
+          </tr>
 
-        <!-- Honors Award -->
-        <tr class="everyOther">
-          <td class="checkBox">
-            <input type="checkbox">
-          </td>
-          <td>
-            <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">Distinguished Deans Honors</a></p>
-          </td>
-          <td>
-            <p>June&nbsp; 1,&nbsp; 2022</p>
-          </td>
-          <td>
-            <p>Granted</p>
-          </td>
-          <td>
-            <p>Academy</p>
-          </td>
-          <td>
-            <p><a href="https://www.linkedin.com/in/adamtspera/">172.17.15.3</a></p>
-          </td>
-          <td>
-            <p>Arcadia University</p>
-          </td>
-        </tr>
+          <!-- NSE Certification -->
+          <tr>
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-on.svg" alt="Port Inactive" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">NSE 1 Network Security Associate</a></p>
+            </td>
+            <td>
+              <p>Feb&nbsp; 19,&nbsp; 2022</p>
+            </td>
+            <td>
+              <p>Aug&nbsp; 2024</p>
+            </td>
+            <td>
+              <p>Certification</p>
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">192.168.3.3</a></p>
+            </td>
+            <td>
+              <p>Fortinet FTNT</p>
+            </td>
+          </tr>
 
-      </table>
+          <!-- ITC Grant -->
+          <tr class="everyOther">
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">ITC 5K Research Grant</a></p>
+            </td>
+            <td>
+              <p>June&nbsp; 12,&nbsp; 2022</p>
+            </td>
+            <td>
+              <p>Granted</p>
+            </td>
+            <td>
+              <p>Research</p>
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">172.17.15.1</a></p>
+            </td>
+            <td>
+              <p>Arcadia University</p>
+            </td>
+          </tr>
 
+          <!-- FRC Award -->
+          <tr>
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">FRC Chairmans Award</a></p>
+            </td>
+            <td>
+              <p>March&nbsp; 27,&nbsp; 2021</p>
+            </td>
+            <td>
+              <p>Granted</p>
+            </td>
+            <td>
+              <p>Robotics</p>
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">172.17.15.2</a></p>
+            </td>
+            <td>
+              <p>First Robotics Competition</p>
+            </td>
+          </tr>
+
+          <!-- Honors Award -->
+          <tr class="everyOther">
+            <td class="checkBox">
+              <input type="checkbox">
+            </td>
+            <td>
+              <img src="./images/cli-wired-on.svg" alt="Port Active" class="portIcon">
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">Distinguished Deans Honors</a></p>
+            </td>
+            <td>
+              <p>June&nbsp; 1,&nbsp; 2022</p>
+            </td>
+            <td>
+              <p>Granted</p>
+            </td>
+            <td>
+              <p>Academy</p>
+            </td>
+            <td>
+              <p><a href="https://www.linkedin.com/in/adamtspera/">172.17.15.3</a></p>
+            </td>
+            <td>
+              <p>Arcadia University</p>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
     </div>
-  </div>
 
-  <script src="javascript/index.js"></script>
+    <script src="javascript/index.js"></script>
+  </div>
 </body>
 
 </html>

@@ -1,5 +1,10 @@
+var profileButton = document.getElementById("profile");
+var emailButton = document.getElementById("email");
+var emailButton2 = document.getElementById("email2");
+var shareButton = document.getElementById("share");
+
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 // Get the header
 var header = document.getElementById("header");
@@ -15,3 +20,19 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+// Onclick for icon buttons
+profileButton.addEventListener('click', function () {
+  location.href = "https://www.linkedin.com/in/adamtspera/";
+});
+
+emailButton.addEventListener('click', function () {
+  window.location.href = "mailto:adamspera@hotmail.com";
+});
+emailButton2.addEventListener('click', function () {
+  window.location.href = "mailto:adamspera@hotmail.com";
+});
+
+shareButton.addEventListener('click', function () {
+  window.location.href = "mailto:";
+});
