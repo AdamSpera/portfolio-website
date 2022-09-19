@@ -10,3 +10,8 @@ app.get('/', function (req, res) {
   console.log(`[/]: Get request received at '/'`);
   res.sendFile('public/index.html', { root: __dirname });
 })
+
+app.get('/scriptswitch', function (req, res) {
+  console.log(`[/scriptswitch]: Get request received at '/scriptswitch'`);
+  res.sendFile('public/documents/EasyInstall.zip', { root: __dirname });
+})
